@@ -5,7 +5,7 @@
  :mod:`argoslabs.demo.helloworld`
 ====================================
 .. moduleauthor:: Jerry Chae <mcchae@argos-labs.com>
-.. note:: VIVANS License
+.. note:: ARGOS-LABS License
 
 Description
 ===========
