@@ -1,11 +1,9 @@
-#!/usr/bin/env python
-# coding=utf8
 """
 ====================================
  :mod:`argoslabs.demo.helloworld`
 ====================================
 .. moduleauthor:: Jerry Chae <mcchae@argos-labs.com>
-.. note:: VIVANS License
+.. note:: ARGOS-LABS License
 
 Description
 ===========
@@ -23,9 +21,6 @@ from argoslabs.demo.helloworld import _main as main
 
 ################################################################################
 class TU(TestCase):
-    """
-    TestCase for argoslabs.demo.helloworld
-    """
     # ==========================================================================
     isFirst = True
 
@@ -35,10 +30,6 @@ class TU(TestCase):
 
     # ==========================================================================
     def test0100_success(self):
-        """
-        argoslabs.demo.helloworld tom jerry
-        :return: True
-        """
         try:
             r = main('tom', 'jerry')
             self.assertTrue(r)
@@ -48,10 +39,6 @@ class TU(TestCase):
 
     # ==========================================================================
     def test0200_failure(self):
-        """
-        argoslabs.demo.helloworld
-        :return: raise exception ArgsError
-        """
         try:
             _ = main('-vvv')
             self.assertTrue(False)
