@@ -1,6 +1,6 @@
 """
 ====================================
- :mod:`argoslabs.demo.helloworld`
+ :mod:`argoslabs.demo.helloworld.tests.test_me`
 ====================================
 .. moduleauthor:: Jerry Chae <mcchae@argos-labs.com>
 .. note:: ARGOS-LABS License
