@@ -1,6 +1,6 @@
 setup:
-  author: Jerry Chae
-  author_email: mcchae@argos-labs.com
+  author: User Name
+  author_email: user@modify.me
   classifiers:
   - 'Operating System :: MacOS :: MacOS X'
   - 'Operating System :: Microsoft :: Windows :: Windows 10'
@@ -8,22 +8,23 @@ setup:
   - 'License :: Other/Proprietary License'
   - 'Natural Language :: English'
   - 'Programming Language :: Python :: 3.7'
-  - 'Topic :: Demo :: ArgTest'
+  - 'Topic :: Demo :: HelloWorld'
   - 'Topic :: Change :: Log :: Unittest for Mac'
   - 'Topic :: Change :: Log :: Unittest for Linux'
-  - 'Topic :: Change :: Log :: Auto Build & Release at 190114-050651 for darwin'
-  description: ARGOS-LABS RPA plugin module sample - argument test
+  - 'Topic :: Change :: Log :: Unittest for Windows'
+  description: YOUR RPA DEMO plugin module
   keywords:
   - rpa
   - robot
   - module
   - demo
-  license: ARGOS-LABS Proprietary License
+  license: YOUR-LABS Proprietary License
   platforms:
   - Mac
   - Windows
   - Linux
   package_data:
-    argoslabs.demo.argtest: ['icon.*']
-  url: https://www.argos-labs.com
-  version: 1.308.1526
+    your.demo.helloworld: ['icon.*']
+  url: https://www.modify.me
+  # do not start with 0
+  version: 1.100.1000

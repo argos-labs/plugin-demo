@@ -26,13 +26,22 @@ IF NOT %ERRORLEVEL% == 0 (
 )
 
 REM # submit to repository
-alabs.ppm %VB% submit
+REM alabs.ppm %VB% submit
+REM IF NOT %ERRORLEVEL% == 0 (
+REM 	echo "upload have error"
+REM     goto errorExit
+REM )
+
+REM # upload to private repository
+alabs.ppm --venv %VB% upload
 IF NOT %ERRORLEVEL% == 0 (
 	echo "upload have error"
     goto errorExit
 )
 
-REM # upload to private repository
-alabs.ppm --venv %VB% upload
-IF NOT %ERRORLEVEL% == 0 (
-	e
+REM # clear
+alabs.ppm --venv clear-all
+
+echo "Build all success!"
+
+: errorExit

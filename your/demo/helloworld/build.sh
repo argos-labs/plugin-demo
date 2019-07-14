@@ -32,12 +32,12 @@ if [ $? -ne 0 ];then
 fi
 
 # submit to repository
-alabs.ppm $VB submit
-if [ $? -ne 0 ];then
-	RC=$?
-	echo "upload failed!"
-	exit $RC
-fi
+# alabs.ppm $VB submit
+# if [ $? -ne 0 ];then
+# 	RC=$?
+# 	echo "upload failed!"
+# 	exit $RC
+# fi
 
 # upload to private repository
 alabs.ppm --venv $VB upload

@@ -1,27 +1,25 @@
-#!/usr/bin/env python
-# coding=utf8
 """
 ====================================
- :mod:`argoslabs.demo.helloworld`
+ :mod:`your.demo.helloworld`
 ====================================
-.. moduleauthor:: Jerry Chae <mcchae@argos-labs.com>
-.. note:: ARGOS-LABS License
+.. moduleauthor:: Your Name <user@modify.me>
+.. note::
 
 Description
 ===========
-ARGOS LABS plugin module sample
+Your Demo plugin module sample
 """
 # Authors
 # ===========
 #
-# * Jerry Chae
+# * Your Name
 #
 # Change Log
 # --------
 #
 #  * [2019/03/08]
 #     - add icon
-#  * [2018/11/28]
+#  * [2018/10/28]
 #     - starting
 
 ################################################################################
@@ -53,12 +51,12 @@ def _main(*args):
     :return: return value from plugin job function
     """
     with ModuleContext(
-        owner='ARGOS-LABS',
+        owner='YOUR-LABS',
         group='demo',
         version='1.0',
         platform=['windows', 'darwin', 'linux'],
         output_type='text',
-        display_name='Hello World',
+        display_name='My World',
         icon_path=get_icon_path(__file__),
         description='Hello World friends',
     ) as mcxt:

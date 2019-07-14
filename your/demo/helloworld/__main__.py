@@ -1,19 +1,19 @@
 """
 ====================================
- :mod:`argoslabs.demo.helloworld`
+ :mod:`your.demo.helloworld`
 ====================================
-.. moduleauthor:: Jerry Chae <mcchae@argos-labs.com>
-.. note:: ARGOS-LABS License
+.. moduleauthor:: Your Name <your@modify.me>
+.. note:: YOURLABS License
 
 Description
 ===========
-ARGOS LABS plugin module sample
+YOUR LABS plugin module sample
 """
 
 ################################################################################
 import sys
 from alabs.common.util.vvargs import ArgsError, ArgsExit
-from argoslabs.demo.helloworld import main
+from your.demo.helloworld import main
 
 
 ################################################################################
