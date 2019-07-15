@@ -32,7 +32,7 @@ class TU(TestCase):
     def test0100_success(self):
         try:
             r = main('tom', 'jerry')
-            self.assertTrue(r)
+            self.assertTrue(r == 0)
         except ArgsError as e:
             sys.stderr.write('\n%s\n' % str(e))
             self.assertTrue(False)

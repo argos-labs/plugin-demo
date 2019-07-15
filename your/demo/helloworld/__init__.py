@@ -40,7 +40,7 @@ def helloworld(mcxt, argspec):
     mcxt.logger.info('>>>starting...')
     print('Hello world %s' % argspec.name)
     mcxt.logger.info('>>>end...')
-    return True
+    return 0
 
 
 ################################################################################
