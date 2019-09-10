@@ -1,6 +1,6 @@
 ---
 merge_icons:
   - name: "myicon"
-    from: icon-demo.png
+    from: my-icon.png
     size: 30
     localte: center

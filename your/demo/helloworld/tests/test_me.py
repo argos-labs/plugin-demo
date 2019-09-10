@@ -29,22 +29,22 @@ class TU(TestCase):
         self.assertTrue(True)
 
     # ==========================================================================
+    def test0050_failure(self):
+        try:
+            _ = main('-vvv')
+            self.assertTrue(False)
+        except Exception as e:
+            sys.stderr.write('\n%s\n' % str(e))
+            self.assertTrue(True)
+
+    # ==========================================================================
     def test0100_success(self):
         try:
             r = main('tom', 'jerry')
             self.assertTrue(r == 0)
-        except ArgsError as e:
+        except Exception as e:
             sys.stderr.write('\n%s\n' % str(e))
             self.assertTrue(False)
-
-    # ==========================================================================
-    def test0200_failure(self):
-        try:
-            _ = main('-vvv')
-            self.assertTrue(False)
-        except ArgsError as e:
-            sys.stderr.write('\n%s\n' % str(e))
-            self.assertTrue(True)
 
     # ==========================================================================
     def test9999_quit(self):
